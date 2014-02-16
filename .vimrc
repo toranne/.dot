@@ -3,7 +3,11 @@ set noautoindent
 set nosmartindent
 set autochdir
 set tabstop=4
-autocmd FileType * setlocal formatoptions-=ro
+" 行を強調表示
+set cursorline
+" " 列を強調表示
+set cursorcolumn
+"autocmd FileType * setlocal formatoptions-=ro
 "set shiftwidth=4
 "set expandtab
 "新しい行のインデントを現在行と同じにする
@@ -21,7 +25,7 @@ autocmd FileType * setlocal formatoptions-=ro
 "タブの代わりに空白文字を挿入する
 "set expandtab
 ""変更中のファイルでも、保存しないで他のファイルを表示
-"set hidden
+set hidden
 "インクリメンタルサーチを行う
 "set incsearch
 ""タブ文字、行末など不可視文字を表示する
@@ -46,4 +50,4 @@ set listchars=eol:\ ,tab:>\ ,trail:-
 "カーソルを行頭、行末で止まらないようにする
 "set whichwrap=b,s,h,l,<,>,[,]
 ""検索をファイルの先頭へループしない
-set nowrapscan
+"set nowrapscan
