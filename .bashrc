@@ -13,7 +13,7 @@ PS1='[\u@\h:\w]'
 
 gvim () { command gvim --remote-silent "$@" || command gvim "$@"; }
 
-
+export PATH=$PATH:$HOME/tools
 ## export JAVA_HOME JDK/JRE ##
 #export JAVA_HOME="/usr/java/latest"
 ## export JAVA_HOME JDK ##
