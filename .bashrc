@@ -11,7 +11,7 @@ PS1='[\u@\h:\w]'
 #PS1='\[\033kBASH\033\\\]$ '
 #PS1='\033k\033\\[\u@\h \W]\$ '
 
-
+gvim () { command gvim --remote-silent "$@" || command gvim "$@"; }
 
 
 ## export JAVA_HOME JDK/JRE ##
