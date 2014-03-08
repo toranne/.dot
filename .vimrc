@@ -1,4 +1,5 @@
 colorscheme desert
+set showtabline=2
 set noautoindent
 set nosmartindent
 set autochdir
