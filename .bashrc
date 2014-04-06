@@ -6,6 +6,11 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
+alias ll='ls -l'
+alias lt='ls -lt'
+alias la='ls -la'
+alias rm='rm -i'
+
 PS1='[\u@\h:\w]'
 #PS1='[\w]'
 #PS1='\[\033kBASH\033\\\]$ '
