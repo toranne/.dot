@@ -7,7 +7,7 @@ set tabstop=4
 " 行を強調表示
 set cursorline
 " " 列を強調表示
-set cursorcolumn
+"set cursorcolumn
 "autocmd FileType * setlocal formatoptions-=ro
 "set shiftwidth=4
 "set expandtab

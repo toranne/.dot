@@ -1,101 +1,13 @@
-#デフォルトで C-Z x と C-Z C-X にバインドされている lockscreen を無効化
-#bind x
-#bind ^x
-#http://aikotobaha.blogspot.jp/2011/09/screenrc.html
-#エラー時の端末画面の点滅
-#vbell off
-# 自動デタッチ
-#autodetach on
-# 起動メッセージ
-#startup_message off
-# スクロールバックバッファ
-#defscrollback 10000
-# エスケープ C-z
-#escape ^z^z
-# 背景色消去
-#defbce "on"
-# ボールドのテキストを表示するとき、色を明るい青に変更する。
-#attrcolor b "b"
-# アンダーラインの代わりに青のテキストを用いる。
-#attrcolor u "-u b"
-#attrcolor u "b"
-# 高輝度色のテキストをボールドにもする。
-#attrcolor i "+b"
-# 256色表示設定
-#term xterm-256color
-# 別画面サポート。Vimやless使うときに便利
-#altscreen on
-# 新しいウィンドウを生成するときのコマンド
-#shell $SHELL
-# ログファイル保存先
-#logfile "$HOME/.screen/screen-%H.%Y%m%d-%0c:%s.%n.%t.log"
-# ログ取得
-#deflog on
-# メッセージを表示する時間(秒単位)
-#msgwait 5
-# 次のメッセージを表示するまでの遅延時間(秒単位)
-#msgminwait 1
-### these are taken from http://www.strcat.de
-   #hardstatus alwayslastline "%?%{yk}%-Lw%?%{wk}%n*%f %t%?(%u)%?%?%{yk}%+Lw%? %=%t %c"
-   #hardstatus alwayslastline "%{rk}[Time:%c] %{gb} %w %{= dd}"
-   #hardstatus alwayslastline "%{= kG} %w %{= dd} %=%t %{rk}[Time:%c]"
-   #hardstatus alwayslastline "%{kr}[Time: %c:%s]%{gk} %{+b } %w %{= dd} %=%t"
-   #hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
-   #hardstatus alwayslastline "%{kr}[%H@$LOGNAME]%{wk} %?%-Lw%?%{gk}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
-   #hardstatus alwayslastline "%{kr}[%M %d :: %c]%{wk} %?%-Lw%?%{gk}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
-   #hardstatus alwayslastline "%{= kY}%c%{dd} %{= kc}windows: %?%-Lw%?%{= kY}%n*%f %t%?(%u)%?%{= kc}%?%+Lw%?"
-#    hardstatus alwayslastline "%{= kR}[%M %d :: %c]%{dd} %{= kc}%?%-Lw%?%{= kY}%n*%f %t%?(%u)%?%{= kc}%?%+Lw%?"
-   #hardstatus alwayslastline "%{kr}[Time: %c:%s]%{wk} %?%-Lw%?%{gk}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
-   #hardstatus alwayslastline "%{bw}%1`%= %{+b ky}| %c:%s |%{+b rw} ip: %2` | vpn: %3`"
-   #hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
-   #hardstatus alwayslastline "%{kr}[Time: %c:%s]%{gk} %{+b } %w %{= dd} %=%t"
-   #hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
-   #hardstatus alwayslastline "\033[m\033[42;30m %m%d \033[m \033[42;30m%c\033[m\033[42;30m %w \033[m"
-   #hardstatus alwayslastline " %m%d \033[42;30m%c\033[m \033[42;30m %w \033[m"
-   #hardstatus alwayslastline " %m%d %c \033[42;30m %w \033[m"
-   #hardstatus alwayslastline " [%{b}fnord%{d}] | %n [%{r}%t%{d}] %W | %m/%d/%Y | %c"
-   #hardstatus alwayslastline "%?%{yk}%-Lw%?%{wb}%n*%f %t%?(%u)%?%?%{yk}%+Lw%?"
-   #hardstatus alwayslastline "%?%F%{.R.}%?%3n %t%? [%h]%?"
-
-# ステータスバー
-#shelltitle "$ |bash"
-#shelltitle "$ |abc"
-#shell $SHELL
-
-#hardstatus alwayslastline
-#hardstatus alwayslastline "%w"
-#hardstatus alwayslastline "%{.b}%-W%{.r}%n%{-}%+W"
-#hardstatus alwayslastline "%{.b}%-w%{.r}%n %t%{-}%+w"
-#hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w"
-#hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
-#hardstatus alwayslastline '%{= .b}%H%{-} %L=%-w%45L>%{=u b.}%n %t%{-}%+w %-17<%=%m/%d %02c:%s'
-#hardstatus alwayslastline '%{= .b} %L=%-w%45L>%{=u b.}%n %t%{-}%+w'
-#hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y %m/%d %C%a "
-#caption always '%?%F%{= bw}%:%{= wk}%?%2n%f%07=%t%='
-#sorendition '+r .b'
-#hardstatus alwayslastline
-#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{+b m}(%{W}%n*%f%t%?(%u)%?%{m})%{-b w}%?%+Lw%?%?%= %{g}][%{c} %D %M %d %{g}%c %{g}]'
-
-#caption always '%?%F%{= gW}%:%{= Kk}%?%2n%f%07=%t%='
-
-#termcapinfo xterm* ti@:te@
 startup_message off
 vbell off
 autodetach on
-altscreen on
-shelltitle "$ |bash"
-defscrollback 10000
-#defutf8 on
-#nonblock on
-
-hardstatus alwayslastline
-#hardstatus string '%{= kw}[ %{= kb}%H%{= kw} ][%= %{= kw}%?%-Lw%?%{= kW}%n*%f %t%?%?%{= kw}%?%+Lw%?%?%= ][ %{r}%l%{w} ]%{w}[%{r} %d/%m/%y %C %A %{w}]%{w}'
-hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w"
-
-#bind 'q' quit
-
-# syntax: screen -t label order command
-#screen -t sunfire01 0
-#screen -t sunfire16 2 ssh s1554463@sunfire16
-#screen -t sunfire16 1 ssh s1554463@sunfire16
+#altscreen on
+#defscrollback 10000
+# disable lockscreen
+bind x
+bind ^x
+#shelltitle "$ |bash"
+#hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w"
+hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %{-}%+w"
+#hardstatus alwayslastline "%w"
 
