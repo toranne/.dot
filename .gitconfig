@@ -5,3 +5,6 @@
 	default = nothing
 [core]
 	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = /home/asuzuki/.gitignore
+[color]
+	ui = auto

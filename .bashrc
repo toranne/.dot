@@ -9,13 +9,25 @@ if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash
 fi
 #
-if [ -f ~/.git-flow-completion.bash ]; then
-    source ~/.git-flow-completion.bash
-fi
-#
 if [ -f ~/.git-prompt.sh ]; then
     source ~/.git-prompt.sh
 fi
+
+if [ -f ~/.git-flow-completion.bash ]; then
+    source ~/.git-flow-completion.bash
+fi
+
+#GIT_PS1_SHOWDIRTYSTATE=true
+#GIT_PS1_SHOWDIRTYSTATE=1
+#GIT_PS1_SHOWSTASHSTATE=1
+#GIT_PS1_SHOWUNTRACKEDFILES=1
+#GIT_PS1_SHOWCOLORHINTS=1
+#GIT_PS1_DESCRIBE_STYLE="branch"
+#GIT_PS1_SHOWUPSTREAM="auto git"
+
+#PS1='\u@\h:\w$ '
+PS1="\h@\u:\w\$(__git_ps1)\$ "
+#PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
 
 # User specific aliases and functions
 alias l='ls -ltr'
@@ -24,9 +36,6 @@ alias lt='ls -lt'
 alias la='ls -la'
 alias rm='rm -i'
 #alias vi='vim'
-
-#PS1='\u@\h:\w$ '
-PS1="\h@\u:\w\$(__git_ps1)\$ "
 
 #gvim () { command gvim --remote-silent "$@" || command gvim "$@"; }
 
