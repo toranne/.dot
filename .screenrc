@@ -1,13 +1,1 @@
-startup_message off
-vbell off
-autodetach on
-#altscreen on
-#defscrollback 10000
-# disable lockscreen
-bind x
-bind ^x
-#shelltitle "$ |bash"
-#hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %t%{-}%+w"
-hardstatus alwayslastline "%{.bW}%-w%{.rW}%n %{-}%+w"
-#hardstatus alwayslastline "%w"
-
+.dot/.screenrc
