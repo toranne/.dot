@@ -1,1 +1,0 @@
-.dot/.git-flow-completion.bash
