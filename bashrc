@@ -48,3 +48,5 @@ alias rm='rm -i'
 #export JAVA_HOME="/usr/java/jre1.7.0_45"
 
 #setxkbmap jp -model jp106
+
+export SCREENDIR=$HOME/.screen
