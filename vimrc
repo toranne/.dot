@@ -51,4 +51,4 @@ set listchars=eol:\ ,tab:>\ ,trail:-
 "カーソルを行頭、行末で止まらないようにする
 "set whichwrap=b,s,h,l,<,>,[,]
 ""検索をファイルの先頭へループしない
-"set nowrapscan
+set nowrapscan
